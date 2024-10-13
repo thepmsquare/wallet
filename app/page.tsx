@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -16,7 +18,9 @@ export default function Home() {
           <CardDescription>personal finance tracking</CardDescription>
         </CardHeader>
         <CardFooter>
-          <Button>Get started</Button>
+          <Link href="/register">
+            <Button>Get started</Button>
+          </Link>
         </CardFooter>
       </Card>
     </main>

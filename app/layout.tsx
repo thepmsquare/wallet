@@ -3,11 +3,12 @@ import "@fontsource-variable/outfit";
 import "@fontsource-variable/fraunces";
 import "./globals.css";
 
+import { Toaster } from "@/components/ui/toaster";
+
 export const metadata: Metadata = {
   title: "wallet",
   description: "personal finance tracking.",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children} <Toaster />
+      </body>
     </html>
   );
 }
