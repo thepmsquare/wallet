@@ -58,6 +58,8 @@ export default function Register() {
         variant: "destructive",
         description: error?.message,
       });
+    } else {
+      console.log(data);
     }
   };
   return (
